@@ -8,7 +8,8 @@ services:
     environment:
       EULA: "TRUE"
       TYPE: "PAPER"
-      SPIGET_RESOURCES: 25080,31043,31054
+      SPIGET_RESOURCES: 25080
+      MODPACK: https://mediafilez.forgecdn.net/files/3922/624/worldedit-bukkit-7.2.12.jar,https://mediafilez.forgecdn.net/files/3903/109/worldguard-bukkit-7.0.8-beta-01-dist.jar
     volumes:
       - ./minecraft-data:/data
     restart: always
