@@ -8,8 +8,8 @@ services:
     environment:
       EULA: "TRUE"
       TYPE: "PAPER"
-      SPIGET_RESOURCES: 80128
-      MODS: https://mediafilez.forgecdn.net/files/3922/624/worldedit-bukkit-7.2.12.jar,https://mediafilez.forgecdn.net/files/3903/109/worldguard-bukkit-7.0.8-beta-01-dist.jar
+      SPIGET_RESOURCES: 80128,390
+      MODS: https://mediafilez.forgecdn.net/files/3922/624/worldedit-bukkit-7.2.12.jar,https://mediafilez.forgecdn.net/files/3903/109/worldguard-bukkit-7.0.8-beta-01-dist.jar,https://mediafilez.forgecdn.net/files/3113/114/Multiverse-Portals-4.2.1.jar,https://mediafilez.forgecdn.net/files/3934/649/Dynmap-3.4-spigot.jar,https://mediafilez.forgecdn.net/files/4049/447/DropHeads.jar
     volumes:
       - ./minecraft-data:/data
     restart: always
