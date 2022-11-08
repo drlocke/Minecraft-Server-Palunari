@@ -8,6 +8,7 @@ services:
     environment:
       EULA: "TRUE"
       TYPE: "PAPER"
+      SPIGET_RESOURCES: 25080,31043,31054
     volumes:
       - ./minecraft-data:/data
     restart: always
