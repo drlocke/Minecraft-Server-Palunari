@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  mc-server:
+    image: itzg/minecraft-server
+    ports:
+      - 9090:25565
+    environment:
+      EULA: "TRUE"
+      TYPE: "PAPER"
+    volumes:
+      - ./minecraft-data:/data
+    restart: always
