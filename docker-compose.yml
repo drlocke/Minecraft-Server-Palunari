@@ -2,17 +2,20 @@ version: "3.8"
 
 services:
   mc-server:
-    image: itzg/minecraft-server
+    image: itzg/minecraft-server:latest
     ports:
       - 9090:25565
       - 9091:8123
     environment:
       EULA: "TRUE"
       TYPE: "PAPER"
-      SPIGET_RESOURCES: 80128,390,71236
-      MODS: https://mediafilez.forgecdn.net/files/3922/624/worldedit-bukkit-7.2.12.jar,https://mediafilez.forgecdn.net/files/3903/109/worldguard-bukkit-7.0.8-beta-01-dist.jar,https://mediafilez.forgecdn.net/files/3113/114/Multiverse-Portals-4.2.1.jar,https://mediafilez.forgecdn.net/files/3934/649/Dynmap-3.4-spigot.jar,https://mediafilez.forgecdn.net/files/4049/447/DropHeads.jar,https://mediafilez.forgecdn.net/files/3074/605/Multiverse-SignPortals-4.2.0.jar,https://mediafilez.forgecdn.net/files/3687/469/Multiverse-Inventories-4.2.3.jar
+      SPIGET_RESOURCES: 80128,71236
+      MODS: https://mediafilez.forgecdn.net/files/4167/109/Dynmap-3.5-beta-1-spigot.jar,https://mediafilez.forgecdn.net/files/4162/203/worldedit-bukkit-7.2.13.jar,https://mediafilez.forgecdn.net/files/3903/109/worldguard-bukkit-7.0.8-beta-01-dist.jar,https://mediafilez.forgecdn.net/files/3462/546/Multiverse-Core-4.3.1.jar,https://mediafilez.forgecdn.net/files/3113/114/Multiverse-Portals-4.2.1.jar,https://mediafilez.forgecdn.net/files/4153/312/DropHeads.jar,https://mediafilez.forgecdn.net/files/3074/605/Multiverse-SignPortals-4.2.0.jar,https://mediafilez.forgecdn.net/files/3687/469/Multiverse-Inventories-4.2.3.jar
       USE_AIKAR_FLAGS: "TRUE"
       MEMORY: "12G"
+      MAX_TICK_TIME: -1
+      ENABLE_AUTOPAUSE: "FALSE"
+      VERSION: 1.19.3
     volumes:
       - ./minecraft-data:/data
     restart: always
